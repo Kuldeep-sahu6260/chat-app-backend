@@ -24,6 +24,10 @@ mongoose
     console.log(err.message,"jkk");
   });
 
+app.get('/', (req, res) => {
+    res.send("Hello is memories  API");
+  })
+
 app.use("/api/auth", authRoutes);
 app.use("/api/messages", messageRoutes);
 
